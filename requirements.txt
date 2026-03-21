@@ -1,0 +1,11 @@
+streamlit
+requests
+zmq
+pydantic
+python-dotenv
+loguru
+pandas
+numpy
+gitpython
+python-gitlab
+github3.py
