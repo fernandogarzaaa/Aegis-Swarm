@@ -5,12 +5,7 @@ import sys
 project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(project_root)
 
-from swarms.analysis import AnalysisSwarm
-from swarms.audit import AuditSwarm
-from swarms.devops import DevOpsSwarm
-from swarms.god import GodSwarm
-from core.whatsapp import WhatsAppNotifier
-from core.token_manager import TokenManager
+from swarms.research import EvolutionaryResearchSwarm
 
 class SwarmOrchestrator:
     def __init__(self, target_project):
@@ -19,6 +14,7 @@ class SwarmOrchestrator:
         self.audit = AuditSwarm()
         self.devops = DevOpsSwarm()
         self.god = GodSwarm()
+        self.research = EvolutionaryResearchSwarm(["https://github.com/langchain-ai/langgraph", "https://github.com/crewAIInc/crewAI"])
         self.notifier = WhatsAppNotifier()
         self.tm = TokenManager()
 
