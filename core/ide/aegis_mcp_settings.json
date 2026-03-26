@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "AegisSwarm": {
+      "command": "python",
+      "args": [
+        "./aegis_swarm\\core\\ide\\mcp_server.py"
+      ],
+      "env": {}
+    }
+  }
+}

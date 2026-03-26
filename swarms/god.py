@@ -5,6 +5,9 @@ from swarms.base import BaseSwarm
 from loguru import logger
 
 class GodSwarm(BaseSwarm):
+    def run(self, *args, **kwargs):
+        pass
+
     def verify(self, sandbox_env: str) -> dict:
         self.log("Initializing Quantum/Mirofish Analysis.")
         
